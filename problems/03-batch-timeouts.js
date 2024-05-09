@@ -46,14 +46,6 @@ function batchTimeouts(callbacks, delays) {
   }
   return arr
 }
-
-const sayHello = () => console.log('hi');
-const sayGoodbye = () => console.log('bye');
-const shout = () => console.log('WHAT?');
-const tasks = [sayHello, sayGoodbye, shout];
-const delays = [500, 200, 900];
-
-const timeoutObjs = batchTimeouts(tasks, delays);
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = batchTimeouts;
